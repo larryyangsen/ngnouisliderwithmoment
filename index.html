@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="slider">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="node_modules/nouislider/distribute/nouislider.min.css">
+	<style>
+	body{
+	background-color:#F3F3F4
+	}
+	.date-slider{
+		height:30px;
+	}
+	.noUi-handle{
+		width:15px !important;
+		height:130% !important;
+		left:0px !important;
+		top:-3px !important;
+		
+	}
+	.noUi-handle:after,
+	.noUi-handle:before{
+		content:none;
+	}
+	</style>
+</head>
+
+<body ng-controller='controller as ctrl'>
+    <script src="bundle.js"></script>
+    <div class="date-slider" range-slider start="ctrl.start" end="ctrl.end"></div>
+
+		<p>{{ctrl.start|date}}~{{ctrl.end|date}}</p>
+</body>
+
+</html>

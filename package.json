@@ -1,0 +1,20 @@
+{
+  "name": "ngnouisliderwithmoment",
+  "version": "0.0.1",
+  "description": "angular datetime slider with momentjs",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify  index.js | uglifyjs > bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "browserify": "^13.0.0",
+    "cssify": "^1.0.2",
+    "moment": "^2.11.2",
+    "nouislider": "^8.3.0",
+    "uglifyjs": "^2.4.10"
+  }
+}
